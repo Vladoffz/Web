@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "MyFirstView";
+    Layout = null;
+    Layout = "/Views/Home/_TestLayout.cshtml";
+}
+
+<h2>MyFirstView</h2>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device=width"/>
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @ViewBag.Greeting World
+        <p>
+            This is Vlad's laba) <br />
+            (Add pictures something.)
+        </p>
+        <a asp-action="RspwForm">Go to next view</a>
+    </div>
+</body>
+</html>
+
+

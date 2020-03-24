@@ -1,0 +1,39 @@
+﻿@model WebApplicationLaba.Models.Guests
+@{
+    ViewData["Title"] = "RspwForm";
+    Layout = "/Views/Home/_AnotherLayout.cshtml";
+}
+<h2>RspwForm</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device=width" />
+    <title>RspwForm</title>
+</head>
+<body>
+    <form asp-action="RspwForm" method="post">
+        <p>
+            <label asp-for="Name">Your name is:</label>
+            <input asp-for="Name" />
+        </p>
+        <p>
+            <label asp-for="Email">Your email is:</label>
+            <input asp-for="Email" />
+        </p>
+        <p>
+            <label>Are you a teacher?</label>
+            <select asp-for="Teacher">
+                <option value="">Choose an option</option>
+                <option value="True">Yes, i'm a teacher.</option>
+                <option value="False">No, i'm not a teacher.</option>
+            </select>
+        </p>
+        <button type="submit">Submit RSPW</button>
+        <div>
+            <a asp-action="MyFirstView">Go to previous view</a>
+        </div>
+    </form>
+</body>
+</html>
+
+
